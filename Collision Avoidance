@@ -1,3 +1,3 @@
 :FcuUpDown=0 :FcuRightLeft=0 goto :Avoid*((:US+:DS+:LS+:RS)<4000)*2
-:FcuUpDown-=(:US<1000)*100 :FcuUpDown+=(:DS<1000)*100
-:FcuRightLeft-=(:RS<1000)*100 :FcuRightLeft+=(:LS<1000)*100 goto1
+:FcuUpDown-=(:US<1000)*100 :FcuUpDown+=(:DS<1000)*200
+:FcuRightLeft-=(:RS<1000)*100 :FcuRightLeft+=(:LS<1000)*200 goto1
