@@ -1,0 +1,9 @@
+i=0 goto 2*(:ScanResults>0)
+:Index=i i++ goto ((i-:ScanResults)<1)*(i+2)+((i-:ScanResults)>=1)*6
+m1=:Material-" Ore"-" Crystal" v1=:Volume/1728 goto2
+m2=:Material-" Ore"-" Crystal" v2=:Volume/1728 goto2
+m3=:Material-" Ore"-" Crystal" v3=:Volume/1728 goto2
+:Scan=0 goto (i<=4)*(i+5)+(i>4)*9
+:Materials=m1+"\n"+v1 :Reset=1 goto1
+:Materials=m1+"\n"+v1+"\n"+m2+"\n"+v2 :Reset=1 goto1
+:Materials=m1+"\n"+v1+"\n"+m2+"\n"+v2+"\n"+m3+"\n"+v3 :Reset=1 goto1
