@@ -1,0 +1,5 @@
+:FcuForward=0 :FcuBackward=0
+:T+=:Inc*20 :T-=:Dec*20 :Dist=(:AL<=:AR)*:AL+(:AL>:AR)*:AR
+:T+=:Inc*20 :T-=:Dec*20 :T+=(:T<0)*1020 :T%=1020 goto:Approach*2+3-:SO
+:Dist=(:AL<=:AR)*:AL+(:AL>:AR)*:AR v=(:Dist-:T)/20
+:FcuForward=(v>0)*v :FcuBackward=(v<0)*(-v)*5 goto:Approach*3+1
