@@ -1,6 +1,6 @@
 pi=3.1416 d=180/pi s2=sqrt(0.5)                //written by LizardFish
-xy=sqrt(:i^2+:j^2) xz=sqrt(:i^2+:k^2) q=ABS(:i/xz) r=xz/:l
-a=:i/:l b=:j/:l c=:k/:l s=:k/xz p=(b<s2)*(b>-s2)*d*(b+(b^3)/6)
+xz=sqrt(:i^2+:k^2) q=ABS(:i/xz) r=xz/:l b=:j/:l s=:k/xz
+p=(b<s2)*(b>-s2)*d*(b+(b^3)/6)
 p+=(r<s2)*((:j>=0)*(90-d*(r+(r^3)/6))+(:j<0)*(d*(r+(r^3)/6)-90))
 h=(q<=s2)*((:k>=0)*(d*(q+(q^3)/6))+(:k<0)*(180-d*(q+(q^3)/6)))
 h+=(s<s2)*(s>-s2)*(90-d*(s+(s^3)/6))               //check out isan.to
